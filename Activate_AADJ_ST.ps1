@@ -37,6 +37,7 @@ $aadPasswordBuffer = [System.Linq.Enumerable]::Take([System.Convert]::FromBase64
 $password = "kk:" + [System.Convert]::ToBase64String($aadPasswordBuffer);
 
 
+#Attention
 #Connect to Azure AD and retrieve the tenant information
 #When you encounter the error, please check to use Windows PowerShell. Don't use PowerShell core.
 Connect-AzureAD
